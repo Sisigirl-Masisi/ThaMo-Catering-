@@ -46,7 +46,7 @@ body {
   color: #b08968;
 }
 
-.nav ul {
+/*.nav ul {
   display: flex;
   list-style: none;
   gap: 20px;
@@ -62,7 +62,59 @@ body {
 
 .nav a:hover {
   color: #b08968;
+}*/
+
+/*NavBar*/
+.navbar {
+  box-shadow: 0px 5px 10px 0px #b88b88;
+  position: fixed;
+  width: 100%;
+  background: #fffaf0;
+  color: #5c4438;
+  opacity: 0.85;
+  z-index: 1;
 }
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  height: 64px;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.navbar input[type="checkbox"],
+.navbar .hamburger-lines {
+  display: style;
+}
+
+.navbar-container .nav-items {
+  order: 2;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.navbar-container .nav-item {
+  list-style: none;
+  margin-left: 2rem;
+  font-size: 1.6rem;
+}
+
+.navbar-container .nav-item a {
+  text-decoration: none;
+  color: #5c4438;
+  font-weight: 500;
+  transition: color 0.2s ease-in-out;
+}
+
+.navbar-container .nav-item a:hover {
+  color: #b08968;
+}
+
+.navbar-container .nav-item a.active {
+  color: #b08968;
+}
+
 
 /* Hero Section */
 .hero {
